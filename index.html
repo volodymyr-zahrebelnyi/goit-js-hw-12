@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>goit-js-hw-11</title>
+    <title>Image Search</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
@@ -14,9 +14,9 @@
     />
     
     <script type="module" crossorigin src="/goit-js-hw-11/commonHelpers.js"></script>
-    <link rel="modulepreload" crossorigin href="/goit-js-hw-11/assets/vendor-8c59ed88.js">
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-11/assets/vendor-ee72e1a4.js">
     <link rel="stylesheet" href="/goit-js-hw-11/assets/vendor-1cd1f9d9.css">
-    <link rel="stylesheet" href="/goit-js-hw-11/assets/index-6bdf67c9.css">
+    <link rel="stylesheet" href="/goit-js-hw-11/assets/index-86182b42.css">
   </head>
   <body>
     <div class="form-container">
@@ -31,9 +31,17 @@
       </form>
     </div>
     <div class="gallery-container">
-      <ul class="gallery js-gallery">
+      <ul class="gallery js-gallery"></ul>
+      <div class="loader-wrap">
         <span class="loader js-loader"></span>
-      </ul>
+        <span class="loader-text js-loader"
+          >Loading images, please wait...</span
+        >
+      </div>
+      <button type="button" class="btn-load-more" data-action="load-more">
+        Load more
+      </button>
+      <button type="button" class="up-button js-btn-up">⇧</button>
     </div>
     
     
