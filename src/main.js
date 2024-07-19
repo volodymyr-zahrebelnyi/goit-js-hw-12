@@ -155,5 +155,3 @@ function scrollToTop() {
     behavior: 'smooth',
   });
 }
-
-// the code should work correctly
